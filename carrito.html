@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/iconos/favicon-14.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,500&display=swap" rel="stylesheet">
+    <title>carrito</title>
+</head>
+<body class="conteinerpadreindex">
+
+    <div class="iconoshop">
+        <a href="./carrito.html"><img  src="./imagenes/iconos/shoposcuro.svg"></a>
+    </div>
+      
+  <!---barra de navegacion-->  
+  <header class="navegacion">
+    <nav class="boxnavegacion"> 
+        <div class="logocelular">
+            <a  href="./index.html"><img src="./imagenes/iconos/logospot.svg"></a>
+        </div>  
+        <ul class="navegacionitems">
+            <li ><a class="item" href="./contacto.html">CONTACTO</a></li>
+            <li ><a class="item" href="./shop.html">SHOP</a></li>
+            <li ><a class="item" href="./questions.html">PREGUNTAS</a></li>
+        </ul>              
+    </nav> 
+    <div class="iconoshopclaro">
+        <a href="./carrito.html"><img  src="./imagenes/iconos/shopclarito.svg"></a>
+    </div>
+    <div class="logo">
+        <a  href="./index.html"><img src="./imagenes/iconos/logospot.svg"></a>
+    </div> 
+</header>
+    <main class="contenido">  
+        <div class="contenidos">
+            <h1>CARRITO DE COMPRAS</h1>
+            <p>Tu carrito esta vacio</p>    
+            <h1>FORMULARIO</h1>
+                <form>
+                    <div class="formulario">
+                    <label for="nombre_apellido">Nombre y Apellido:</label>
+                    <input class="cuadrodetexto" type="text" name="nombre_apellido"></div>
+                    <div class="formulario">
+                    <label for="email">Email</label>
+                    <input class="cuadrodetexto"  type="email" id="email" pattern=".+@gmail\.com" size="30" required></div>
+                    <div class="formulario">
+                    <label for="contrasena">Contraseña (mas de 6 caracteres)</label>
+                    <input  class="cuadrodetexto" type="password" pattern=".{6,}"></div>
+                    <div class="formulario"> 
+                    <input type="radio" name="notificaciones" value="notificaciones" >
+                    <div class="notificaciones">  Recibir notificaciones por email</div></div>
+                    <input class="boton" type="submit" value="Enviar formulario">
+                    <input class="boton" type="reset" value="Limpiar formulario">
+                </form>
+       
+        </div>
+    </main>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     
+</body>
+</html>

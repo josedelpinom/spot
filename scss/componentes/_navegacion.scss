@@ -1,0 +1,59 @@
+.navegacion{
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    overflow: hidden;
+    align-items: flex-start;
+    width: 25%;
+    height: 100%;
+    .boxnavegacion{
+        width: 100%;
+        margin-top: 20px;
+        .navegacionitems{ text-decoration: none;
+            list-style: none;
+            color:#F2ECCE;
+        .navegacionitems a{
+            text-decoration: none;
+            list-style: none;
+            color:#F2ECCE;
+            list-style: none;
+            text-decoration: none;
+            color: #F2ECCE;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            margin: 15px;
+            padding-top: 10px;
+                &:hover{
+                    transform: translate(1px, 1px);
+                    background-color: aqua;
+                
+            }}
+        }
+}
+.item {
+    text-decoration: none;
+    color: #F2ECCE;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 15px;
+    padding-top: 10px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin-top: 30%;
+    width: 100%;
+    height: 100%;
+    &:hover{
+        transform: translate(1px, 1px);
+    }
+}
+.logocelular{
+    display: none;
+}
+.iconoshopclaro{
+    display: none;
+}
+ }
+

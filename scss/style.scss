@@ -1,0 +1,373 @@
+@import"./base/variables";
+@import"./componentes/navegacion";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*             general           */
+.conteinerpadreindex{
+    display: grid;
+    grid-template-columns: 25% 75%; 
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "nav cont "
+    ;
+    
+}
+h1{
+    color: $color-principal;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 40px;
+    padding-top: 35px;
+    font-weight: 600;
+
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    color: $color-texto2;
+}
+.navegacion{
+    grid-area: nav;
+    background-color: $color-principal;
+}
+
+
+.contenido{
+    grid-area: cont;
+    overflow: auto;
+
+
+    .contenidos{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin: 55px;
+        padding: 5px;
+        overflow: auto;
+
+    }
+    .contenidoindex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:left;
+        overflow: auto;
+        margin: 0px;
+        padding: 0%;
+        width: 100%;
+        
+    }
+}
+.iconoshop{
+    display: flex;
+    position: absolute;
+    width: 95%;
+    height:100px;
+    margin: 20px;
+    flex-direction:row;
+    align-items: center;
+    justify-content: right;
+    &:hover{
+        transform: translate(1px, 1px);
+    }}
+
+
+ /*index*/
+
+ #arriba{
+    display: inline-table;
+    background-color: $color-principal;
+    
+}
+.navegacionitems{
+    text-decoration: none;
+    
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    width: 100%;
+
+}
+.carousel-control-prev {
+    left: 25%;
+}
+
+/*             preguntas             */
+
+.boxpreguntas{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    list-style:none;
+    .preguntas{
+        list-style:none;
+        li a{ 
+            list-style:none;
+            text-decoration: none;
+            color: $color-texto1;
+            font-family: 'Roboto', sans-serif;
+            font-weight:500;
+            &:hover{
+                text-decoration: underline;
+  text-decoration-color: $color-alternativo;
+  -moz-text-decoration-color: $color-alternativo;
+  text-decoration-thickness: 5px;
+
+            }
+
+        }
+    }
+}
+.boxrespuestas{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    .respuestas li{
+        text-decoration: none;
+        color:  $color-texto1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        margin-bottom: 10x;
+        margin-top: 10px;
+
+    }
+}
+
+/*             contacto             */
+.boxcontacto{
+    display: flex;
+    flex-direction: column;
+    .contactos {
+        li{ 
+    text-decoration: none;
+    color: $color-texto1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+        }
+        a{
+    text-decoration: none;
+    color: $color-secundario;
+    font-family: 'Roboto',sans-serif;
+    font-weight:400;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size:small;
+    height: 40px;
+    
+        }
+        .link{
+            background-color: $color-principal;
+            border-radius: 50px;
+            width: 170px;
+            &:hover{
+                transform: translate(2px, 2px);
+                background-color: $color-secundario;
+                color:$color-principal;
+            }
+            a img, svg{
+                padding-right: 5px;
+                &:hover{
+                    align-items: center;
+                    justify-content: center;
+                    transform: scale(1.5);
+                }
+            }
+        } 
+        div{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin-top: 10px;
+            p{
+                margin-bottom: 0;
+            }
+        } 
+}
+    p{
+        margin-top: 10px;
+    }
+}
+.mobile{
+    display: none;
+}
+.desktop{
+    display:contents;
+}
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+/*             shop             */
+.boxproductos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border:none;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    }
+    .cardpropia{
+        width: 15rem;
+        &:hover{
+            transform: translate(2px, 2px);
+    }
+        
+    }
+}
+
+/*             carrito             */
+.formulario{
+    display: flex;
+    margin: 7px;
+}
+.boton{
+        margin-top: 5px;
+        background-color:$color-secundario;  
+        border-radius: 50px;
+        border-color: $color-secundario;
+        color: black;
+        width: 170px;
+        height: 30px;
+    font-family: 'Roboto',sans-serif;
+    font-weight:300;
+        &:hover{
+            transform: translate(2px, 2px);
+            background-color: lighten($color-secundario, 5%);
+            color:$color-principal;
+        }
+    } 
+
+input{
+    margin-left: 5px;}
+
+@media only screen and (min-height: 820px){
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .carousel-control-prev {
+        left: 0%;
+    }
+    
+}
+
+@media only screen and (max-width: 576px){
+    .conteinerpadreindex{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 200px ;
+        grid-template-areas: 
+        "nav"
+        "cont"
+        ;
+    }
+    .carousel-control-prev {
+        left: 0%;
+    }
+    .navegacion{
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+        position: sticky;
+       
+        .boxnavegacion{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 35px;
+                .navegacionitems{
+                    display:flex;
+                    list-style-type: none;
+                    text-decoration: none;
+                    margin-top: 5px;
+                    padding-left: 0;
+                }
+            }
+            .iconoshopclaro{
+        display: flex;
+        position: absolute;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 5px;
+        margin-top: 10px;
+
+    }
+
+   
+           .logo{
+        display: none;
+    }
+    .logocelular{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }  
+    .iconoshop{
+        display: none;
+    }
+    }
+    
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
+    }
+    
+    
+    h1{
+        padding-bottom: 20px;
+        padding-top: 0px;
+    }
+    .imagenesindex{
+        width: 576px;
+    }
+    
+   
+    
+    .boxpreguntas{
+        flex-direction: column;
+    }
+    .respuestas li iframe{
+        width: 576px;
+    }
+
+  
+
+/*             shop             */
+.formulario{
+.input{
+    width: 100px;
+    height: 20px;
+}}
+
+.formulario{
+    .cuadrodetexto{
+        width: 100px;;
+        height: 20px;
+    }
+    
+    .boton{
+        margin-top: 30px;
+        
+    }
+    }
+
+}
