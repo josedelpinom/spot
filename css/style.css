@@ -90,6 +90,10 @@ p {
   background-color: #401F0D;
 }
 
+.desktop {
+  display: contents;
+}
+
 .contenido {
   grid-area: cont;
   overflow: auto;
@@ -133,18 +137,23 @@ p {
   background-color: #401F0D;
 }
 
-.navegacionitems {
-  text-decoration: none;
-}
-
 .carousel-item {
   height: 100vh;
   min-height: 300px;
   width: 100%;
 }
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 .carousel-control-prev {
   left: 25%;
+}
+
+.mobile {
+  display: none;
 }
 
 /*             preguntas             */
@@ -237,20 +246,6 @@ p {
 }
 .boxcontacto p {
   margin-top: 10px;
-}
-
-.mobile {
-  display: none;
-}
-
-.desktop {
-  display: contents;
-}
-
-.carousel-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 /*             shop             */
@@ -366,15 +361,15 @@ input {
   .navegacion .iconoshop {
     display: none;
   }
-  .carousel-control-prev, .carousel-control-next {
-    display: none;
-  }
   h1 {
     padding-bottom: 20px;
     padding-top: 0px;
   }
   .imagenesindex {
     width: 576px;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
   }
   .boxpreguntas {
     flex-direction: column;

@@ -32,7 +32,9 @@ p{
     grid-area: nav;
     background-color: $color-principal;
 }
-
+.desktop{
+    display:contents;
+}
 
 .contenido{
     grid-area: cont;
@@ -81,18 +83,22 @@ p{
     background-color: $color-principal;
     
 }
-.navegacionitems{
-    text-decoration: none;
-    
-}
 .carousel-item{
     height: 100vh;
     min-height: 300px;
     width: 100%;
+    img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
 
 }
 .carousel-control-prev {
     left: 25%;
+}
+.mobile{
+    display: none;
 }
 
 /*             preguntas             */
@@ -192,17 +198,8 @@ p{
         margin-top: 10px;
     }
 }
-.mobile{
-    display: none;
-}
-.desktop{
-    display:contents;
-}
-.carousel-item img{
-    height: 100%;
-    width: 100%;
-    object-fit:cover;
-}
+
+
 /*             shop             */
 .boxproductos{
     display: flex;
@@ -253,6 +250,9 @@ p{
 input{
     margin-left: 5px;}
 
+
+
+
 @media only screen and (min-height: 820px){
     .mobile{
         display: block;
@@ -265,6 +265,8 @@ input{
     }
     
 }
+
+
 
 @media only screen and (max-width: 576px){
     .conteinerpadreindex{
@@ -311,27 +313,20 @@ input{
         margin-top: 10px;
 
     }
-
-   
-           .logo{
+    .logo{
         display: none;
     }
     .logocelular{
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }  
     .iconoshop{
         display: none;
     }
     }
     
-    .carousel-control-prev, .carousel-control-next{
-        display: none;
-    }
-    
-    
+
     h1{
         padding-bottom: 20px;
         padding-top: 0px;
@@ -339,9 +334,9 @@ input{
     .imagenesindex{
         width: 576px;
     }
-    
-   
-    
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
+    }
     .boxpreguntas{
         flex-direction: column;
     }
@@ -352,22 +347,23 @@ input{
   
 
 /*             shop             */
-.formulario{
-.input{
-    width: 100px;
-    height: 20px;
-}}
-
-.formulario{
-    .cuadrodetexto{
-        width: 100px;;
+    .formulario{
+    .input{
+        width: 100px;
         height: 20px;
-    }
-    
-    .boton{
-        margin-top: 30px;
+    }}
+
+    .formulario{
+        .cuadrodetexto{
+            width: 100px;;
+            height: 20px;
+        }
+        
+        .boton{
+            margin-top: 30px;
+            
+        }
+        }
+
         
     }
-    }
-
-}
